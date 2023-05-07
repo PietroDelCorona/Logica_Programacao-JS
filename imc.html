@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calcularImc(altura, peso){
+
+        //var imc1 = peso1 / (altura1 * altura1);
+        //var imc2 = peso2 / (altura2 * altura2);
+        //var imcTotal = imc1 + imc2
+        //mostra("A soma dos IMCs é " + imcTotal);
+
+        var imc = peso / (altura * altura);
+        //return imc;
+        return peso / (altura * altura);
+    }
+
+    //var imcFlavio = calcularImc( 1.71, 73);
+    //calcularImc( 1.71, 73);
+    //var imcAmigo = calcularImc(1.72, 68);
+    //calcularImc(1.72, 68);
+    
+    //mostra(imcFlavio);
+    //mostra(imcAmigo);
+    
+    //var totalImc = imcFlavio + imcAmigo;
+
+    var totalImc = calcularImc(1.71, 73) + calcularImc(1.72, 68);
+    
+    document.write("A soma dos IMCs é " + Math.round(totalImc));
+
+    
+
+</script>
